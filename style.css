@@ -27,6 +27,7 @@ html {
 
 body {
     background-color: var(--white-color);
+    overflow-x: hidden;
 }
 
 /* Setting for the whole website */
@@ -205,13 +206,14 @@ label .close_btn {
 }
 
 .hero_container .image_section {
-    max-width: 90%;
-    background-color: rgba(97, 3, 97, 0.597);
+    max-width: 100%;
+   
 }
 
 .hero_container .image_section img {
     width: 100%;
     height: auto;
+    
    
 }
 
@@ -309,7 +311,7 @@ label .close_btn {
 }
 
 .why_container .why_items img {
-  width: 100%;
+    width: 100%;
     max-width: 560px;
     height: auto;
     border-radius: 10px;
