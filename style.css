@@ -245,7 +245,8 @@ label .close_btn {
 }
 
 .about_container .image_section img {
-    width: 560px;
+    width: 100%;
+    max-width: 560px;
     height: auto;
 }
 
@@ -308,8 +309,9 @@ label .close_btn {
 }
 
 .why_container .why_items img {
-    width: 560px;
-    margin: 10px;
+  width: 100%;
+    max-width: 560px;
+    height: auto;
     border-radius: 10px;
      display: block;
     
