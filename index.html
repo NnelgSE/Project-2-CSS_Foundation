@@ -7,10 +7,7 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css" />
     <!-- Box Icon Link for Icons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header & Navbar Section -->
@@ -53,13 +50,13 @@
             </p>
 
             <div class="hero_section_button">
-              <button class="button">Order Online</button>
-              <button class="button">Book A Table</button>
+              <button class="button orderBtn">Order Online</button>
+              <button class="button bookBtn">Book A Table</button>
             </div>
           </div>
 
           <div class="image_section">
-            <img src="image-00.png" alt="flavored Tea" />
+            <img src="image/image-00.png" alt="flavored Tea" />
           </div>
         </div>
       </div>
@@ -227,23 +224,25 @@
       <div class="section_container">
         <div class="gallery_container">
           <div class="gallery_items">
-            <img src="image/allflavor.jpg" alt="Gallery Image" />
+            <img src="image/allflavor.jpg" onclick="openPopup(this,'All Flavored Milk Tea')" />
+
           </div>
           <div class="gallery_items">
-            <img src="image/image.jpg" alt="Gallery Image" />
+            <img src="image/image.jpg" onclick="openPopup(this,'Fresh and Sweet Winter Melon')" />
           </div>
           <div class="gallery_items">
-            <img src="image/veg.jpg" alt="Gallery Image" />
+            <img src="image/veg.jpg" onclick="openPopup(this,'Healthy Food Vegetable')" />
           </div>
           <div class="gallery_items">
-            <img src="image/taro.png" alt="Gallery Image" />
+            <img src="image/taro.png" onclick="openPopup(this,'Yummy Taro Flavored')" />
           </div>
           <div class="gallery_items">
-            <img src="image/image-1.png" alt="Gallery Image" />
+            <img src="image/image-1.png" onclick="openPopup(this,'Fresh and Cold Fruit Tea')" />
           </div>
           <div class="gallery_items">
-            <img src="image/avocado.png" alt="Gallery Image" />
+            <img src="image/avocado.png" onclick="openPopup(this,'Healthy Avocado Flavor')" />
           </div>
+          
         </div>
       </div>
     </section>
@@ -323,6 +322,7 @@
         </div>
       </div>
     </section>
+    
 
     <!-- Footer Section -->
     <footer>
@@ -377,5 +377,9 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+      AOS.init();
+    </script>
   </body>
 </html>
